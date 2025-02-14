@@ -48,6 +48,8 @@ namespace password_history
 
             app.UseHttpsRedirection();
 
+            app.UseStaticFiles();// This is crucial for serving wwwroot content
+
             app.UseRouting();
 
             app.UseAuthorization();
